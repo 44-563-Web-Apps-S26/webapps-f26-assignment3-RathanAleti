@@ -76,6 +76,34 @@
 </table>
 
 </table>
+
+<hr>
+
+<h2>Code Snippet</h2>
+
+<p>
+This Node.js snippet demonstrates how to create a new file using the built-in
+file system module.
+</p>
+
+<pre>
+const fileSystem = require('fs');
+
+const createFile = fileName => {
+    fileSystem.open(fileName, 'w', error => {
+        if (error) throw error;
+        console.log('Saved!');
+    });
+};
+</pre>
+<p>
+Source:
+<a href="https://nodejs.pieces.cloud/?p=7bf54998d3" target="_blank">
+    code.pieces Node.js Snippets
+</a>
+</p>
+
+
   </body>
 </html>
 
